@@ -1,0 +1,8 @@
+Input DataSet used is : Market_Basket_Optimisation.txt
+output_file is : Market_Basket_Optimisation_H_mine_Output.txt
+min_sup is : 1501
+
+Frequent_Itemsets, Support
+mineral_water # Supp: 1625
+
+Total Frequent Itemset Count = 1

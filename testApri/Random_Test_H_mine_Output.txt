@@ -1,0 +1,42 @@
+Input DataSet used is : Random_Test.txt
+output_file is : Random_Test_H_mine_Output.txt
+min_sup is : 20
+
+Frequent_Itemsets, Support
+1 # Supp: 88
+1,6 # Supp: 26
+1,8 # Supp: 26
+10 # Supp: 76
+10,4 # Supp: 26
+10,5 # Supp: 22
+10,8 # Supp: 22
+2 # Supp: 68
+2,1 # Supp: 24
+2,8 # Supp: 20
+3 # Supp: 84
+3,1 # Supp: 24
+3,6 # Supp: 28
+3,8 # Supp: 24
+4 # Supp: 82
+4,1 # Supp: 22
+4,3 # Supp: 20
+5 # Supp: 80
+5,1 # Supp: 22
+5,3 # Supp: 22
+5,4 # Supp: 28
+5,6 # Supp: 24
+5,8 # Supp: 38
+6 # Supp: 90
+6,8 # Supp: 22
+7 # Supp: 78
+7,1 # Supp: 24
+7,3 # Supp: 26
+7,4 # Supp: 20
+7,6 # Supp: 20
+8 # Supp: 94
+9 # Supp: 60
+9,10 # Supp: 20
+9,4 # Supp: 22
+9,6 # Supp: 20
+
+Total Frequent Itemset Count = 35
