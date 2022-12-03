@@ -10,6 +10,13 @@ def readTransDB(input):
     listOfItems = sorted({item for tid in listOfTIDs for item in tid})
 
     return listOfTIDs, listOfItems
+'''
+input size: number lines of file
+worst case: average case 
+basic operation: addition in line 10
+count: C(n) 
+=>C(n) belong to big theta(n)
+'''
 
 
 '''
@@ -27,6 +34,14 @@ def getFrequentItemSets(C, transDB, minsup):
         if count >= minsup:
             L.append(itemSet)
     return L
+'''
+input size: size list of itemsets
+worst case: average case
+basic operation: if set(itemSet).issubset(set(tid))
+count: C(n^2)
+=> C(n) belong to big theta(n^2)
+'''
+
 
 '''
 function candidates list of itemsets from L
@@ -40,6 +55,14 @@ def candidateItemSets(L):
             if L[i][:-1] == L[j][:-1]:  
                 C.append(sorted(set(L[i]).union(set(L[j]))))
     return C
+'''
+input size: size of list
+worst case: average case
+basic operation: if L[i][:-1] == L[j][:-1]
+count: C(n^2) 
+=>C(n) belong to big theta(n^2)
+'''
+
 
 '''
 The Apriori algorithm
@@ -57,6 +80,14 @@ def apriori(path, minsup):
         L = getFrequentItemSets(C, dbs, minsup) # prune step
 
     return res
+'''
+input size: size of database
+worst case: average case
+basic operation: while(L)
+count: C(n) 
+=>C(n) belong to big-theta(n)
+'''
+
 
 if __name__ == "__main__":
     print(apriori('input.txt', 2))
